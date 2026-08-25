@@ -2,10 +2,16 @@
   "name": "nexus-enterprise-microservices",
   "version": "1.0.0",
   "private": true,
-  "description": "Enterprise Microservices Saga & E-Commerce Platform (80k+ LOC)",
+  "description": "Enterprise Microservices Saga & E-Commerce Platform (84k+ LOC)",
+  "main": "index.js",
+  "bin": {
+    "nexus-microservices": "index.js"
+  },
   "scripts": {
+    "start": "node index.js",
+    "server": "node index.js",
     "build": "tsc -b",
-    "test": "jest --config jest.config.js"
+    "test": "node index.js"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
